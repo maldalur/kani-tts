@@ -43,9 +43,10 @@ echo ""
 echo "Upgrading pip..."
 pip install --upgrade pip
 
-# Install PyTorch (CUDA version - adjust if needed)
+# Install PyTorch (CUDA version)
 echo ""
 echo "Installing PyTorch with CUDA support..."
+echo "Note: Using CUDA 11.8. For other CUDA versions, see https://pytorch.org/get-started/locally/"
 pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 
 # Install transformers and datasets

@@ -33,6 +33,9 @@ logger = logging.getLogger(__name__)
 class DatasetValidator:
     """Validator for TTS training datasets."""
     
+    # Configuration constants
+    AUDIO_CHECK_SAMPLE_SIZE = 10  # Number of audio files to check for properties
+    
     def __init__(self, metadata_file: str):
         """
         Initialize validator.
@@ -203,8 +206,8 @@ class DatasetValidator:
         durations = []
         errors = []
         
-        # Sample up to 10 files for validation
-        sample_size = min(10, len(self.df))
+        # Sample up to AUDIO_CHECK_SAMPLE_SIZE files for validation
+        sample_size = min(self.AUDIO_CHECK_SAMPLE_SIZE, len(self.df))
         sample_indices = self.df.sample(n=sample_size).index
         
         for idx in sample_indices:

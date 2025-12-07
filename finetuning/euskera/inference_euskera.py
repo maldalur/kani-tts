@@ -190,9 +190,12 @@ class EuskeraTTSInference:
             
         Returns:
             Audio waveform as numpy array
+            
+        Note:
+            The NeMo NanoCodec expects tokens in shape [batch, seq_len, 1].
+            See: https://docs.nvidia.com/deeplearning/nemo/user-guide/docs/en/stable/tts/models.html#codec
         """
-        # Reshape tokens for codec (assuming codec expects specific shape)
-        # This may need adjustment based on actual codec requirements
+        # Reshape tokens for codec - NeMo expects [batch, seq_len, 1]
         tokens_tensor = torch.LongTensor(tokens).unsqueeze(0)
         
         if self.device == "cuda":
