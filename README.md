@@ -97,7 +97,20 @@ This pipeline handles:
 
 ## Finetuning
 
-For finetuning KaniTTS on your own dataset, check out this comprehensive finetuning pipeline: [KaniTTS-Finetune-pipeline](https://github.com/nineninesix-ai/KaniTTS-Finetune-pipeline)
+### Basque (Euskera) Language Support
+
+We now include a complete finetuning pipeline for Basque language in this repository! Check out the [`finetuning/euskera`](finetuning/euskera/) directory for:
+- Complete finetuning script following repository guidelines
+- Dataset preparation utilities
+- Training and inference examples
+- Comprehensive documentation
+- Quick start guide
+
+**Get Started:** [Basque Finetuning Guide](finetuning/euskera/README.md) | [Quick Start](finetuning/euskera/QUICKSTART.md)
+
+### General Finetuning
+
+For finetuning KaniTTS on other languages or custom datasets, check out this comprehensive finetuning pipeline: [KaniTTS-Finetune-pipeline](https://github.com/nineninesix-ai/KaniTTS-Finetune-pipeline)
 
 This pipeline provides:
 - Step-by-step finetuning guides
