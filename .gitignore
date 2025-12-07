@@ -18,6 +18,11 @@ ENV/
 *.safetensors
 *.bin
 
+# Exception: Allow trained model files in training directory
+!training/**/models/**/*.safetensors
+!training/**/models/**/*.bin
+!training/**/models/**/*.json
+
 
 # IDE
 .vscode/
