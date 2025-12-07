@@ -1,0 +1,15 @@
+# Requirements for Simple TTS Training Example
+
+# Core ML frameworks
+torch>=2.0.0
+transformers>=4.35.0
+datasets>=2.14.0
+accelerate>=0.24.0
+
+# Training utilities
+tensorboard>=2.14.0
+safetensors>=0.4.0
+
+# Utilities
+tqdm>=4.65.0
+numpy>=1.24.0

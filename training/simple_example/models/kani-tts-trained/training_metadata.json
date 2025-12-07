@@ -1,0 +1,9 @@
+{
+  "model_type": "kani-tts-trained",
+  "base_model": "nineninesix/kani-tts-400m-0.3-pt",
+  "dataset": "simple_tts_dataset",
+  "num_samples": 10,
+  "num_epochs": 1,
+  "is_demo": false,
+  "note": "This is a demonstration model trained on synthetic data"
+}
